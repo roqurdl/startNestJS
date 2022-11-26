@@ -20,6 +20,7 @@ export class MoviesController {
   getAll(): Movie[] {
     return this.moviesService.getAll();
   }
+
   @Get(`:id`)
   getOne(@Param(`id`) movieId: number): Movie {
     return this.moviesService.getOne(movieId);
